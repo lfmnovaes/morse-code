@@ -40,7 +40,13 @@ def decode_char(char)
   return @morse_to_char[char]
 end
 
-char = decode_char(".-")
-print char
-char = decode_char("-")
-print char
+def decode_word(word)
+  word = word.split(' ')
+  result = ''
+  word.each { |char|
+    result = result + decode_char(char)
+  }
+  return result
+end
+
+puts decode_word("-- -.-- -. .- -- .")
