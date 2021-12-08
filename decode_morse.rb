@@ -23,7 +23,7 @@ def decode_word(word)
   result
 end
 
-def decode_message(message)
+def decode(message)
   message = message.split('   ')
   result = []
   message.each do |char|
@@ -32,6 +32,6 @@ def decode_message(message)
   result.join(' ')
 end
 
-puts decode_message('-- -.--   -. .- -- .')
+puts decode('-- -.--   -. .- -- .')
 
-puts decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
