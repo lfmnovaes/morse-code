@@ -49,4 +49,13 @@ def decode_word(word)
   return result
 end
 
-puts decode_word("-- -.-- -. .- -- .")
+
+def decode_message(word)
+  word = word.split('   ')
+  result = []
+  word.each { |char|
+    result.push(decode_word(char))
+  }
+  return result.join(' ')
+end
+ puts decode_message("-- -.--   -. .- -- .")
