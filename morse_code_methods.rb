@@ -35,7 +35,7 @@ def decode_char(char)
     '--...' => '7',
     '---..' => '8',
     '----.' => '9',
-    '-----' => '0',
+    '-----' => '0'
   }
   @result = @morse_to_char[char]
   @result.nil? ? ' ' : @result
@@ -92,21 +92,21 @@ def encode_char(char)
     '7' => '--...',
     '8' => '---..',
     '9' => '----.',
-    '0' => '-----',
+    '0' => '-----'
   }
   @result = @char_to_morse[char]
-  @result.nil? ? ' ' : @result + ' '
+  @result.nil? ? ' ' : "#{@result} "
 end
 
 def encode_word(word)
-  word = word.split('')
+  word = word.chars
   result = ''
   word.each { |char| result += encode_char(char) }
   result
 end
 
 def encode(message)
-  message = message.split(' ')
+  message = message.split
   result = []
   message.each { |word| result.push(encode_word(word)) }
   result.join('   ')
