@@ -1,6 +1,11 @@
-# Morse Code Decoder
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This project consists of functions that convert morse code to text
+# Morse Code Encoder/Decoder
+
+> Use the modules of this project to encode/decode string to Morse code
+
+## Preview
+![Preview of project](./preview.png)
 
 ## Prerequisites
 
@@ -13,7 +18,7 @@ Ruby >= 3.0.0
    git clone https://github.com/lfmnovaes/morse-code.git
    ```
 - Go to the cloned directory with `cd morse-code`
-- With Ruby installed in your environment, you can just run `ruby decode_morse.rb` to see the result
+- With Ruby installed in your environment, you can just run `ruby examples.rb` to see some outputs
 
 ## Authors
 
@@ -51,4 +56,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./LICENSE) licensed.
